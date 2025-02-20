@@ -1,22 +1,102 @@
 #include <stdio.h>
+   
+    int main(){
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char estado[3];  //inicio das variaveis da primeira carta
+    char codigo[20];
+    char cidade[20];
+    int população;
+    float km²;
+    float pib;
+    int pt;
     
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+   printf("DESAFIO SUPER TRUNFO-NIVEL \n\n"); //titulo do trabalho
 
-    return 0;
-}
+   printf("CARTA 1\n\n"); //primeira carta
+
+   printf("nome da cidade?\n");//nome da cidade 
+   scanf("%s",cidade);
+
+   printf("qual é o estado?\n");//estado 
+   scanf("%s",&estado);
+
+   printf("qual é o codigo da carta?\n");//codigo da carta
+   scanf("%s",&codigo);
+
+   printf("qual é o tamanho da população?\n");//tamanho da população
+   scanf("%d",&população);
+
+   printf("qual é o tamanho da cidade em m²?\n");//tamanho da cidade em metros quadrados
+   scanf("%f",&km²);
+
+   printf("qual é o pib?\n");//pib da cidade
+   scanf("%f",&pib);
+
+   printf("quantos pontos turisticos essa cidade possuí?\n");//quantidade de pontos turisticos
+   scanf("%d",&pt);
+    
+       //primeira carta concluida
+   
+   char estado2[4];      //variaveis da segunda carta
+   char codigo2[21];
+   char cidade2[21];
+   int população2;  
+   float km²2;
+   float pib2;
+   int pt2;
+
+   printf("CARTA 2\n\n");
+   
+   printf("nome da cidade?\n"); //segundo nome da cidade 
+   scanf("%s",cidade2);
+   
+
+   printf("qual é o estado?\n"); //segundo estado 
+   scanf("%s",estado2);
+   
+
+   printf("qual é o codigo da carta?\n"); //codigo da segunda carta
+   scanf("%s",&codigo2);
+  
+
+   printf("qual é o tamanho da população?\n"); //tamanho da populacao segunda carta
+   scanf("%d",&população2);
+
+   printf("qual o tamanho da cidade em m²?\n"); //tamanho da cidade em m² segunda carta
+   scanf("%f",&km²2);
+
+   printf("qual é o pib?\n"); //pib da cidade segunda carta
+   scanf("%f",&pib2);
+
+   printf("quantos pontos turisticos essa cidade possui?\n"); //quantidade de pontos turisticos segunda carta
+   scanf("%d",&pt2);
+   
+
+   printf("\n\nCARTA 1\n\n");   //envio de informações da primeira carta
+   printf("cidade: %s\n",cidade);
+   printf("estado: %s\n",estado);
+   printf("codigo da carta: %s\n",codigo);
+   printf("população: %d\n",população);
+   printf("tamanho da cidade: %.2f m²\n",km²);
+   printf("pib da cidade:r$ %.3f bilhões de reais\n",pib);
+   printf("número de pontos turisticos: %d\n\n",pt);
+   
+   printf("CARTA 2\n\n");   //envio de informações da segunda carta
+   printf("cidade: %s\n",cidade2);
+   printf("estado :%s\n",estado2);
+   printf("codigo da carta: %s\n",codigo2);
+   printf("população: %d\n",população2);
+   printf("tamanho da cidade: %.2f km²\n",km²2);
+   printf("pib da cidade: r$ %.3f bilhões de reais\n",pib2);
+   printf("número de pontos turisticos: %d\n",pt2);
+
+   return 0;
+
+
+
+
+
+
+
+
+}  
