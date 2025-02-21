@@ -9,8 +9,9 @@
     float km²;
     float pib;
     int pt;
-    
+
    printf("DESAFIO SUPER TRUNFO-NIVEL \n\n"); //titulo do trabalho
+   printf("novo commit\n");
 
    printf("CARTA 1\n\n"); //primeira carta
 
