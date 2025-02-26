@@ -13,6 +13,7 @@
 
 
    printf("SUPER TRUNFO\n\n"); //titulo do trabalho
+   printf("novo commit\n");
 
    printf("CARTA 1\n\n"); //primeira carta
 
@@ -105,7 +106,7 @@
    printf("a densidade populacional: %.2f\n",denpopulacional2);
    printf("pib per capita: %.2f\n",pibpercapita2);
 
-
+   
    return 0;
 
 
