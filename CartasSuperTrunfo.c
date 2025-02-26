@@ -1,6 +1,5 @@
 #include <stdio.h>
-   
-    int main(){
+   int main(){
 
     char estado[3];  //inicio das variaveis da primeira carta
     char codigo[20];
@@ -9,9 +8,11 @@
     float km²;
     float pib;
     int pt;
+    float denpopulacional;
+    float pibpercapita;
 
-   printf("DESAFIO SUPER TRUNFO-NIVEL \n\n"); //titulo do trabalho
-   printf("novo commit\n");
+
+   printf("SUPER TRUNFO\n\n"); //titulo do trabalho
 
    printf("CARTA 1\n\n"); //primeira carta
 
@@ -36,7 +37,10 @@
    printf("quantos pontos turisticos essa cidade possuí?\n");//quantidade de pontos turisticos
    scanf("%d",&pt);
     
-       //primeira carta concluida
+   denpopulacional =  população / km²; //calculo do pib per capita e dencidade populacional
+   pibpercapita =  pib / população;
+   
+   //primeira carta concluida
    
    char estado2[4];      //variaveis da segunda carta
    char codigo2[21];
@@ -45,6 +49,8 @@
    float km²2;
    float pib2;
    int pt2;
+   float denpopulacional2;
+   double pibpercapita2;
 
    printf("CARTA 2\n\n");
    
@@ -72,6 +78,9 @@
    printf("quantos pontos turisticos essa cidade possui?\n"); //quantidade de pontos turisticos segunda carta
    scanf("%d",&pt2);
    
+   denpopulacional2 =  população2 / km²2;  //calculo do pib per capita e dencidade populacional segunda carta
+   pibpercapita2 =  pib2 / população2;
+
 
    printf("\n\nCARTA 1\n\n");   //envio de informações da primeira carta
    printf("cidade: %s\n",cidade);
@@ -79,17 +88,23 @@
    printf("codigo da carta: %s\n",codigo);
    printf("população: %d\n",população);
    printf("tamanho da cidade: %.2f m²\n",km²);
-   printf("pib da cidade:r$ %.3f bilhões de reais\n",pib);
-   printf("número de pontos turisticos: %d\n\n",pt);
-   
-   printf("CARTA 2\n\n");   //envio de informações da segunda carta
+   printf("pib da cidade: r$ %.2f bilhões de reais\n",pib);
+   printf("número de pontos turisticos: %d\n",pt);
+   printf("a densidade populacional: %.2f\n",denpopulacional);
+   printf("pib per capita : %.2f\n",pibpercapita);
+
+
+   printf("\nCARTA 2\n\n");   //envio de informações da segunda carta
    printf("cidade: %s\n",cidade2);
-   printf("estado :%s\n",estado2);
+   printf("estado: %s\n",estado2);
    printf("codigo da carta: %s\n",codigo2);
    printf("população: %d\n",população2);
    printf("tamanho da cidade: %.2f km²\n",km²2);
-   printf("pib da cidade: r$ %.3f bilhões de reais\n",pib2);
+   printf("pib da cidade: r$ %.2f bilhões de reais\n",pib2);
    printf("número de pontos turisticos: %d\n",pt2);
+   printf("a densidade populacional: %.2f\n",denpopulacional2);
+   printf("pib per capita: %.2f\n",pibpercapita2);
+
 
    return 0;
 
