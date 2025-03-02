@@ -13,7 +13,6 @@
     float superpoder;
 
    printf("SUPER TRUNFO\n\n"); //titulo do trabalho
-   printf("novo commit\n");
 
    printf("CARTA 1\n\n"); //primeira carta
 
@@ -37,11 +36,13 @@
 
    printf("quantos pontos turisticos essa cidade possuí?\n");//quantidade de pontos turisticos
    scanf("%d",&pt);
-    
+   
+   
    denpopulacional = população / km²; //calculo do pib per capita/dencidade populacional/super poder
    pibpercapita = pib / população;
    pib = pib / 1000000000;
    superpoder = (float)(população + km² + pib + pt + denpopulacional + pibpercapita);
+
 
    //primeira carta concluida
    
@@ -82,10 +83,12 @@
    printf("quantos pontos turisticos essa cidade possui?\n"); //quantidade de pontos turisticos segunda carta
    scanf("%d",&pt2);
 
+
    denpopulacional2 =  população2 / km²2;  //calculo do pib per capita/dencidade populacional/super poder/ segunda carta
    pibpercapita2 =  pib2 / população2;
    pib2 = pib2 / 1000000000;
    superpoder2 = (float)(população2 + km²2 + pib2 + pt2 + denpopulacional2 + pibpercapita2);
+
 
    //segunda carta concluida
 
@@ -128,7 +131,16 @@
    printf("pib per capita: %d\n",(pibpercapita > pibpercapita2));
    printf("super poder: %d\n\n",(superpoder > superpoder2));
    
-   //fim do codigo
+   printf("carta 1: %s- %.2f km²\n",cidade,km²);   //comparação de um atributo unico 
+   printf("carta 2: %s- %.2f km²\n",cidade2,km²2);
+    if (km² > km²2){
+       printf("\n***carta 1- %s venceu***\n",cidade);
+    }
+    else{
+      printf("\n***carta 2-%s venceu***\n",cidade2);
+    }
+
+    //fim do codigo
    
    return 0;
 
