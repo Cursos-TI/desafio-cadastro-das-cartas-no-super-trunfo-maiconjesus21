@@ -16,6 +16,7 @@ int main() {
     int decisão;
     
     printf("SUPER TRUNFO\n\n"); // título do trabalho
+    printf("novo commit\n");
 
     printf("CARTA 1\n\n"); // primeira carta
 
