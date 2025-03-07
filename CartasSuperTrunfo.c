@@ -18,6 +18,7 @@
     int resultado2;
 
    printf("SUPER TRUNFO\n\n"); //titulo do trabalho
+   printf("novo commit\n");
 
    printf("CARTA 1\n\n"); //primeira carta
 
